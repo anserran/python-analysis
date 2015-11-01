@@ -13,7 +13,7 @@ for game_id in game_ids:
     collection_name = 'gameplays_results_' + game_id
 
     if collection_name not in db.collection_names():
-        exit()
+        continue
 
     gameplays_results = db[collection_name]
 
